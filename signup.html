@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Lato, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #F1FBFF;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100px; 
+        }
+
+        .title {
+            text-align: center;
+            font-size: 28px;
+            color: #30699F;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .input-group input {
+            width: calc(100% - 40px);
+            padding: 15px;
+            margin: 1px;
+            border-radius: 30px;
+            border: none;
+            font-size: 16px;
+            background-color: #FFEADC;
+            box-sizing: border-box;
+            outline: none;
+            text-align: center;
+            color: #d17a48;
+        }
+
+        .input-group input[type="password"] {
+            position: relative;
+        }
+
+        .input-group .eye-icon {
+            position: absolute;
+            right: 15px;
+            top: 12px;
+            cursor: pointer;
+        }
+
+        .button {
+            background-color: #A2CFFE;
+            color: #ffffff;
+            padding: 15px;
+            width: calc(100% - 200px);
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover{
+            background-color: #4682b4;
+        }
+
+        .alternative {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .alternative a {
+            color: #3a57e8;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons img {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="fish.png" alt="Fish Logo">
+        </div>
+        <h2 class="title">Sign up</h2>
+        
+        <div class="input-group">
+            <input type="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password" required>
+            <span class="eye-icon">👁️</span>
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Confirm Password" required>
+            <span class="eye-icon"></span>
+        </div>
+        
+        <button class="button">Next</button>
+        
+        <div class="alternative">
+            Already have an account? <a href="#">Sign in</a>
+        </div>
+        
+        <div class="alternative">Or continue with</div>
+        
+        <div class="social-icons">
+            <img src="google_icon.png" alt="Google">
+            <img src="facebook_icon.png" alt="Facebook">
+            <img src="wechat_icon.png" alt="WeChat">
+            <img src="apple_icon.png" alt="Apple">
+        </div>
+    </div>
+
+</body>
+</html>
